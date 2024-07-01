@@ -1,9 +1,11 @@
 import React from 'react'
 
 const TodoWrapper = () => {
-  return (
-    <div>TodoWrapper</div>
-  )
+    return (
+        <>
+            <h1>Todo App</h1>
+        </>
+    )
 }
 
 export default TodoWrapper
