@@ -11,7 +11,6 @@ const TodoWrapper = () => {
             desc: todo, //kullanıcı ne yazmışsa gel onu yaz dedik.
             completed: false //görev yeni eklendiğinden tamamlanmamıştır yanı false.
         }]);
-        console.log(todos);
     };
 
 
@@ -19,8 +18,7 @@ const TodoWrapper = () => {
         <>
             <div className='TodoWrapper'>
                 <h1>Todo App</h1>
-                <TodoForm />
-                <button onClick={() => { addTodo("Deneme") }}>Tıkla</button>
+                <TodoForm addTodo={addTodo} />
             </div>
         </>
     )
