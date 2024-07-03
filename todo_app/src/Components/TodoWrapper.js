@@ -13,7 +13,6 @@ const TodoWrapper = () => {
         }]);
         console.log(todos);
     };
-    addTodo("Deneme");
 
 
     return (
@@ -21,6 +20,7 @@ const TodoWrapper = () => {
             <div className='TodoWrapper'>
                 <h1>Todo App</h1>
                 <TodoForm />
+                <button onClick={() => { addTodo("Deneme") }}>Tıkla</button>
             </div>
         </>
     )
