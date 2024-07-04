@@ -31,11 +31,20 @@ h1 {
   border-radius: .25rem;
 }
 
+.TodoForm {
+  display: flex;
+  justify-content: space-between;
+}
+
 .TodoInput {
   background: none;
   color: white;
   border: 1px solid gray;
   padding: .5re 1rem;
   margin-top: 1rem;
+  width: 75%;
+}
 
+.TodoBtn {
+  width: 25%;
 }
