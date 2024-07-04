@@ -5,7 +5,7 @@ function TodoForm({ addTodo }) {
     <>
       <form className='TodoForm'>
         <input type='text' value={"Görev"} className='TodoInput' />
-
+        <button type='submit' className='TodoBtn'>Add Task</button>
       </form>
 
     </>
