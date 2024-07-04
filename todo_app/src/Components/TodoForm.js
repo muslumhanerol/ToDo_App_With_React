@@ -1,8 +1,13 @@
 import React from 'react'
 
-function TodoForm({addTodo}) {
+function TodoForm({ addTodo }) {
   return (
-    <div>TodoForm</div>
+    <>
+      <form className='Todo-Form'>
+
+      </form>
+
+    </>
   )
 }
 
