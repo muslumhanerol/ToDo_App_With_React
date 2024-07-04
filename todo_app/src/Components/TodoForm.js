@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function TodoForm({ addTodo }) {
+const TodoForm = ({ addTodo }) => {
+  const [value, setValue] = useState("");
+
+
   return (
     <>
       <form className='TodoForm'>
-        <input type='text' value={"Görev"} className='TodoInput' />
+        <input type='text' className='TodoInput' placeholder='Görev Ekle' />
         <button type='submit' className='TodoBtn'>Add Task</button>
       </form>
 
