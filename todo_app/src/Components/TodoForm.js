@@ -10,7 +10,6 @@ const TodoForm = ({ addTodo }) => {
         <input type='text' className='TodoInput' placeholder='Görev Ekle' />
         <button type='submit' className='TodoBtn'>Add Task</button>
       </form>
-
     </>
   )
 }
