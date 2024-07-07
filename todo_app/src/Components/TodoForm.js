@@ -6,7 +6,8 @@ const TodoForm = ({ addTodo }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (value) { //value doluysa.
-
+      addTodo(value);
+      setValue("");//görev girme alanını temizler.
     }
   }
 
@@ -14,7 +15,7 @@ const TodoForm = ({ addTodo }) => {
   return (
     <>
       <form className='TodoForm'>
-        <input onChange={() => { setValue(e.target.value) }} type='text' className='TodoInput' placeholder='Görev Ekle' value={value} />
+        <input onChange={(e) => { setValue(e.target.value); }} type='text' className='TodoInput' placeholder='Görev Ekle' value={value} />
         {/* e=onChange, target= input bu inputta gerçekleşiyor, value=bu inputun valuesi. */}
         <button type='submit' className='TodoBtn'>Add Task</button>
       </form>
