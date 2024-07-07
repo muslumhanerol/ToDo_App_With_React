@@ -14,7 +14,7 @@ const TodoForm = ({ addTodo }) => {
 
   return (
     <>
-      <form className='TodoForm'>
+      <form onSubmit={handleSubmit} className='TodoForm'>
         <input onChange={(e) => { setValue(e.target.value); }} type='text' className='TodoInput' placeholder='Görev Ekle' value={value} />
         {/* e=onChange, target= input bu inputta gerçekleşiyor, value=bu inputun valuesi. */}
         <button type='submit' className='TodoBtn'>Add Task</button>
