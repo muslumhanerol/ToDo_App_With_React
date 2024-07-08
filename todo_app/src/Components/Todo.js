@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
 
 const Todo = () => {
     return (
@@ -7,6 +8,7 @@ const Todo = () => {
                 <p className='tamamlandı mı tamamlanmadı mı'>
                     Görev 1
                 </p>
+                <FontAwesomeIcon icon="fa-solid fa-house" />
 
             </div>
         </>
