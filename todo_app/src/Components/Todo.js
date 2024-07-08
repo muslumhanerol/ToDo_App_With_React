@@ -2,7 +2,14 @@ import React from 'react'
 
 const Todo = () => {
     return (
-        <div>Todo</div>
+        <>
+            <div className='Todo'>
+                <p className='tamamlandı mı tamamlanmadı mı'>
+                    Görev 1
+                </p>
+
+            </div>
+        </>
     )
 }
 

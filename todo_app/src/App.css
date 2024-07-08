@@ -52,3 +52,15 @@ h1 {
   border: none;
   cursor: pointer;
 }
+
+.Todo {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
