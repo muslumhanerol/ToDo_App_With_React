@@ -13,7 +13,6 @@ const TodoWrapper = () => {
         }]);
     };
 
-
     return (
         <>
             <div className='TodoWrapper'>
