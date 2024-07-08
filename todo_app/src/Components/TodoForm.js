@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const TodoForm = ({ addTodo }) => {
+const TodoForm = ({ addTodo, todos }) => {
   const [value, setValue] = useState("");
 
   const handleSubmit = (e) => {
@@ -9,6 +9,7 @@ const TodoForm = ({ addTodo }) => {
       addTodo(value);
       setValue("");//görev girme alanını temizler.
     }
+    console.log(todos);
   }
 
 
