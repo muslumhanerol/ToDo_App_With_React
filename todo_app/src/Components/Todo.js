@@ -2,12 +2,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
-const Todo = () => {
+const Todo = ({ task, toggleComplete }) => {
+    console.log(task);
+    console.log(toggleComplete);
     return (
         <>
             <div className='Todo'>
-                <p className>
-                    Görev 1
+                <p>
+                    {task.desc}
                 </p>
                 <FontAwesomeIcon icon={faHouse} />
 
@@ -16,4 +18,4 @@ const Todo = () => {
     )
 }
 
-export default Todo
+export default Todo;

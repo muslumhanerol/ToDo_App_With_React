@@ -26,15 +26,13 @@ const TodoWrapper = () => {
                 <TodoForm addTodo={addTodo} todos={todos} />
                 {
                     todos.map((todo) => {
-                        <Todo
+                        return <Todo // Todo.js e gönderdiklerimiz.
                             key={todo.id}
                             task={todo}
-
+                            toggleComplete={toggleComplete}
                         />
                     })
                 }
-
-
             </div>
         </>
     )
