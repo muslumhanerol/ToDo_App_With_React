@@ -64,3 +64,10 @@ h1 {
   margin-bottom: 1rem;
   border-radius: 5px;
 }
+
+/* Tamamlanan Görevler için */
+.Completed {
+  color: midnightblue;
+  text-decoration: line-through;
+
+}
