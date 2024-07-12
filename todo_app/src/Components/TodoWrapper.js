@@ -14,12 +14,26 @@ const TodoWrapper = () => {
         }]);
     };
 
+    // Todo.js e göndermek için fonk
+    const toggleComplete = (id) => {
+        todos.map((todo) => todo.id == id ? { ...todo, completed: !todo.completed } : todo);
+    }
+
     return (
         <>
             <div className='TodoWrapper'>
                 <h1>Todo App</h1>
                 <TodoForm addTodo={addTodo} todos={todos} />
-                <Todo />
+                {
+                    todos.map((todo) => {
+                        <Todo
+                            key={todo.id}
+                            task={todo}
+
+                        />
+                    })
+                }
+
 
             </div>
         </>

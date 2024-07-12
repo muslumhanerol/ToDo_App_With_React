@@ -6,7 +6,7 @@ const Todo = () => {
     return (
         <>
             <div className='Todo'>
-                <p className='Completed'>
+                <p className>
                     Görev 1
                 </p>
                 <FontAwesomeIcon icon={faHouse} />
