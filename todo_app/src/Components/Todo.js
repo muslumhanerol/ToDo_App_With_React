@@ -12,7 +12,6 @@ const Todo = ({ task, toggleComplete }) => {
                     {task.desc}
                 </p>
                 <FontAwesomeIcon icon={faHouse} />
-
             </div>
         </>
     )
