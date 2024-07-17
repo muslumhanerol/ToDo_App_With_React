@@ -73,12 +73,10 @@ h1 {
 }
 
 .TodoTask {
-  background-color: aqua;
   width: 80%;
   text-align: start;
 }
 
 .TodoButtons {
-  background-color: red;
   width: 20%;
 }
