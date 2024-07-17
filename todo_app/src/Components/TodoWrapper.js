@@ -14,9 +14,9 @@ const TodoWrapper = () => {
         }]);
     };
 
-    // Todo.js e göndermek için fonk
+    // Todo.js e göndermek için fonk.
     const toggleComplete = (id) => {
-        todos.map((todo) => todo.id == id ? { ...todo, completed: !todo.completed } : todo);
+        todos.map((todo) => todo.id == id ? { ...todo, completed: !todo.completed } : todo); //completed false true, true ise false yapacak.
     }
 
     return (
