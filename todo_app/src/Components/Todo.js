@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
 const Todo = ({ task, toggleComplete }) => {
     console.log(task);
@@ -11,7 +11,7 @@ const Todo = ({ task, toggleComplete }) => {
                 <p>
                     {task.desc}
                 </p>
-                <FontAwesomeIcon icon={faHouse} />
+                <FontAwesomeIcon icon={faPenToSquare} />
             </div>
         </>
     )
