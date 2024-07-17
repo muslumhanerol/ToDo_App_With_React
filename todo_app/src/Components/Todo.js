@@ -10,7 +10,7 @@ const Todo = ({ task, toggleComplete }) => {
                 <p onClick={() => { toggleComplete(task.id) }} className='TodoTask'>
                     {task.desc}
                 </p>
-                <div>
+                <div className='TodoButtons'>
                     <FontAwesomeIcon icon={faPenToSquare} />
                     <FontAwesomeIcon icon={faTrash} />
                 </div>
