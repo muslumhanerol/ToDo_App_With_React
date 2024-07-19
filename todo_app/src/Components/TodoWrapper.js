@@ -24,15 +24,7 @@ const TodoWrapper = () => {
             <div className='TodoWrapper'>
                 <h1>Todo App</h1>
                 <TodoForm addTodo={addTodo} todos={todos} />
-                {
-                    todos.map((todo) => {
-                        return <Todo // Todo.js e gönderdiklerimiz.
-                            key={todo.id}
-                            task={todo}
-                            toggleComplete={toggleComplete}
-                        />
-                    })
-                }
+
             </div>
         </>
     )
