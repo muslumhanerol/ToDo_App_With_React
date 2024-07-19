@@ -25,7 +25,7 @@ const TodoWrapper = () => {
             <div className='TodoWrapper'>
                 <h1>Todo App</h1>
                 <TodoForm addTodo={addTodo} todos={todos} />
-                <TodoContainer todos={todos}
+                <TodoContainer todos={todos} toggleComplete={toggleComplete} />
             </div>
         </>
     )
