@@ -1,7 +1,7 @@
 import React from 'react'
 import Todo from './Todo'
 
-const TodoContainer = () => {
+const TodoContainer = ({ todos }) => {
     return (
         <>
             {
