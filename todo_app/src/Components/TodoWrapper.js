@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import TodoForm from './TodoForm'
 import { v4 as uuidv4 } from 'uuid';
 import Todo from './Todo';
+import TodoContainer from './TodoContainer';
 
 const TodoWrapper = () => {
     let [todos, setTodos] = useState([]); //useState([])= başlangıç degeri boş dizidir. //Tüm todo ların tutulacağı yer.
@@ -24,7 +25,7 @@ const TodoWrapper = () => {
             <div className='TodoWrapper'>
                 <h1>Todo App</h1>
                 <TodoForm addTodo={addTodo} todos={todos} />
-
+                <TodoContainer todos={todos}
             </div>
         </>
     )
