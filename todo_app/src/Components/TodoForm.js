@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const TodoForm = ({ addTodo, todos }) => {
   const [value, setValue] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => { //Form submit edildiğinde çalışacak.
     e.preventDefault();
     if (value) { //value doluysa.
       addTodo(value);
