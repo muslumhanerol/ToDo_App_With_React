@@ -80,3 +80,7 @@ h1 {
 .TodoButtons {
   width: 20%;
 }
+
+.TodoContainer {
+  margin-top: 1rem;
+}
