@@ -9,7 +9,6 @@ const TodoForm = ({ addTodo, todos }) => {
       addTodo(value);
       setValue("");//görev girme alanını temizler.
     }
-    console.log(todos);
   }
 
 
