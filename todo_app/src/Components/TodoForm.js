@@ -8,7 +8,7 @@ const TodoForm = ({ addTodo, todos }) => {
     if (value) { //value doluysa.
       addTodo(value);
       setValue("");//görev girme alanını temizler.
-      e.target.button.focus();
+      e.target.firstChild.focus();
     }
   }
 
