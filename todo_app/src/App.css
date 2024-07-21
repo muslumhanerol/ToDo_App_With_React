@@ -38,6 +38,7 @@ h1 {
 }
 
 .TodoInput {
+  outline: none;
   background: none;
   color: white;
   border: 1px solid gray;
