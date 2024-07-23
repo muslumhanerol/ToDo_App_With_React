@@ -22,19 +22,22 @@ const TodoWrapper = () => {
 
 
     //silme işlemei
-    // const deleteTask = (id) => setTodos(todos.filter((todo)=>todo.id!=id))   //şu id li taski sil
+    const deleteTask = (id) => setTodos(todos.filter((todo) => todo.id != id))   //dizi içerisinde dolaş, silinecek olanı ordan çıkart, geri kalanları yeni bir diziye koymak. yeni dizi=todos.filter((todo) => todo.id != id. ve setTodos vesilesiyle todos içerisine koyuyor.
+    //deleteTask fonk. buradan direk todo ya yollayamayız ilk todocontainer e gönder ardından todo.js e gönder. burda 48.satırda gönderdik, todocontainerde 4. satırda karşıladık.
 
-    //alternatif uzun yol.
-    const deleteTaskAlternative = (id) => {
-        const newTodos = []
-        for (let i = 0; i < todos.length; i++) {
-            if (todos[i].id != id) {
-                newTodos.push(todos[i]); //silinmeyecek olanları koyduğumuz yer.
-            }
-        }
-        console.log(newTodos);
-    }
-    deleteTaskAlternative(4);
+
+
+    // //alternatif uzun yol.
+    // const deleteTaskAlternative = (id) => {
+    //     const newTodos = []
+    //     for (let i = 0; i < todos.length; i++) {
+    //         if (todos[i].id != id) {
+    //             newTodos.push(todos[i]); //silinmeyecek olanları koyduğumuz yer.
+    //         }
+    //     }
+    //     console.log("Silinmemiş Hali", todos);
+    //     console.log("Silinmiş Hali", newTodos);
+    // }
 
 
     return (
@@ -42,7 +45,8 @@ const TodoWrapper = () => {
             <div className='TodoWrapper'>
                 <h1>Todo App</h1>
                 <TodoForm addTodo={addTodo} todos={todos} />
-                <TodoContainer todos={todos} toggleComplete={toggleComplete} />
+                <TodoContainer todos={todos} toggleComplete={toggleComplete} deleteTask={deleteTask} />
+
             </div>
         </>
     )
