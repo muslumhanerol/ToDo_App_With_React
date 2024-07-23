@@ -20,6 +20,16 @@ const TodoWrapper = () => {
         setTodos(todos.map((todo) => todo.id == id ? { ...todo, completed: !todo.completed } : todo)); //completed false true, true ise false yapacak.
     }
 
+
+    //silme işlemei
+    // const deleteTask = (id) => setTodos(todos.filter((todo)=>todo.id!=id))   //şu id li taski sil
+
+    //alternatif uzun yol.
+    const deleteTaskAlternative = (id) => {
+
+    }
+
+
     return (
         <>
             <div className='TodoWrapper'>
