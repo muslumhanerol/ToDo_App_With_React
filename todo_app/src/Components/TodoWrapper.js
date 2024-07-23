@@ -21,8 +21,9 @@ const TodoWrapper = () => {
     }
 
 
-    //silme işlemei
-    const deleteTask = (id) => setTodos(todos.filter((todo) => todo.id != id))   //dizi içerisinde dolaş, silinecek olanı ordan çıkart, geri kalanları yeni bir diziye koymak. yeni dizi=todos.filter((todo) => todo.id != id. ve setTodos vesilesiyle todos içerisine koyuyor.
+    //SİLME işlemei
+    const deleteTask = (id) => setTodos(todos.filter((todo) => todo.id != id))
+    //dizi içerisinde dolaş, silinecek olanı ordan çıkart, geri kalanları yeni bir diziye koymak. yeni dizi=todos.filter((todo) => todo.id != id. ve setTodos vesilesiyle todos içerisine koyuyor.
     //deleteTask fonk. buradan direk todo ya yollayamayız ilk todocontainer e gönder ardından todo.js e gönder. burda 48.satırda gönderdik, todocontainerde 4. satırda karşıladık.
 
 
