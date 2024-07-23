@@ -80,8 +80,15 @@ h1 {
 
 .TodoButtons {
   width: 20%;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .TodoContainer {
   margin-top: 1rem;
+}
+
+.fa-pen-to-square {
+  color: orange;
 }
