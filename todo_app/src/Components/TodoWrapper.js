@@ -26,8 +26,15 @@ const TodoWrapper = () => {
 
     //alternatif uzun yol.
     const deleteTaskAlternative = (id) => {
-
+        const newTodos = []
+        for (let i = 0; i < todos.length; i++) {
+            if (todos[i].id != id) {
+                newTodos.push(todos[i]); //silinmeyecek olanları koyduğumuz yer.
+            }
+        }
+        console.log(newTodos);
     }
+    deleteTaskAlternative(4);
 
 
     return (
