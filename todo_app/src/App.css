@@ -89,6 +89,10 @@ h1 {
   margin-top: 1rem;
 }
 
+.TodoButtons svg {
+  font-size: 1.25rem;
+}
+
 .fa-pen-to-square {
   color: orange;
 }
