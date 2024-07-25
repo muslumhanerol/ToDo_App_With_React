@@ -4,7 +4,7 @@ import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const Todo = ({ task, toggleComplete, deleteTask }) => {
     const confirmDelete = (id) => {
-        let answer = confirm("Görev Silinecektir");
+        let answer = window.confirm("Görev Silinecektir");
     }
     return (
         <>
