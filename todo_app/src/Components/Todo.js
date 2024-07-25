@@ -5,6 +5,9 @@ import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 const Todo = ({ task, toggleComplete, deleteTask }) => {
     const confirmDelete = (id) => {
         let answer = window.confirm("Görev Silinecektir");
+        if (answer) {
+            deleteTask(id);
+        }
     }
     return (
         <>
@@ -14,7 +17,7 @@ const Todo = ({ task, toggleComplete, deleteTask }) => {
                 </p>
                 <div className='TodoButtons'>
                     <FontAwesomeIcon icon={faPenToSquare} />
-                    <FontAwesomeIcon icon={faTrash} onClick={() => deleteTask(task.id)} />
+                    <FontAwesomeIcon icon={faTrash} onClick={() => confirmDelete(task.id)} />
 
                 </div>
             </div >
