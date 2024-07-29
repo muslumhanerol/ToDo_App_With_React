@@ -7,7 +7,7 @@ const Todo = ({ task, toggleComplete, deleteTask }) => {
         let answer = window.confirm("Görev Silinecektir");
         if (answer) {
             deleteTask(id);
-        } //30.39
+        }
     }
     return (
         <>
