@@ -11,7 +11,13 @@ const TodoEditForm = ({ task }) => {
     return (
         <>
             <form onSubmit={handleSubmit} className='TodoForm'>
-                <input type='text' value={value} onChange={(e) => { setValue(e.target.value) }} />
+                <input
+                    type='text'
+                    value={value}
+                    onChange={
+                        (e) => { setValue(e.target.value) }
+                    }
+                />
             </form>
         </>
     )
