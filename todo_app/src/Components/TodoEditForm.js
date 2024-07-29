@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const TodoEditForm = () => {
+    const [value, setValue] = useState("")
     return (
-        <div>TodoEditForm</div>
+        <>
+            <form className='TodoForm'>
+                <input type='text' value={STATE} />
+
+            </form>
+        </>
     )
 }
 
