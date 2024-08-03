@@ -12,6 +12,7 @@ const TodoWrapper = () => {
             id: uuidv4(),
             desc: todo, //kullanıcı ne yazmışsa gel onu yaz dedik.
             completed: false //görev yeni eklendiğinden tamamlanmamıştır yanı false.
+            //51.44 
         }]);
     };
 
