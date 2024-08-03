@@ -12,7 +12,7 @@ const TodoContainer = ({ todos, toggleComplete, deleteTask }) => {
 
                         //Normal if yazımı
                         if (todo.isEditing) { //eğer bu true ise todoeditform return olacak, değilse todoyu.
-                            return <TodoEditForm />
+                            return <TodoEditForm task={todo} />
                         } else {
                             return <Todo // Todo.js e gönderdiklerimiz.
                                 key={todo.id}
@@ -20,7 +20,7 @@ const TodoContainer = ({ todos, toggleComplete, deleteTask }) => {
                                 toggleComplete={toggleComplete}
                                 deleteTask={deleteTask} //Todo js.de 5.satırda karşıladık.
                             />
-                        }
+                        } //58.35
 
                     })
                 }
