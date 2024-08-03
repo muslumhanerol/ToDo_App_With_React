@@ -9,6 +9,16 @@ const TodoContainer = ({ todos, toggleComplete, deleteTask }) => {
             <div className='TodoContainer'>
                 {
                     todos.map((todo) => {
+                        //turner if yazımı
+                        //    return todo.isEditing ?  (<TodoEditForm /> )
+                        //     : <Todo // Todo.js e gönderdiklerimiz.
+                        // key={todo.id}
+                        // task={todo}
+                        // toggleComplete={toggleComplete}
+                        // deleteTask={deleteTask} //Todo js.de 5.satırda karşıladık.
+                        // />
+
+                        //Normal if yazımı
                         if (todo.isEditing) {
                             return <TodoEditForm />
                         } else {
