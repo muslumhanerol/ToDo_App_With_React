@@ -11,7 +11,7 @@ const TodoContainer = ({ todos, toggleComplete, deleteTask }) => {
                     todos.map((todo) => {
 
                         //Normal if yazımı
-                        if (todo.isEditing) {
+                        if (todo.isEditing) { //eğer bu true ise todoeditform return olacak, değilse todoyu.
                             return <TodoEditForm />
                         } else {
                             return <Todo // Todo.js e gönderdiklerimiz.
