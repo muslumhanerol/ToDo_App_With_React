@@ -16,7 +16,7 @@ const TodoWrapper = () => {
         }]);
     };
 
-    // Todo.js e göndermek için fonk.
+    // Todo.js e göndermek için tamamlanma ve tamamlamadan çıkarma fonk.
     const toggleComplete = (id) => {
         setTodos(todos.map((todo) => todo.id == id ? { ...todo, completed: !todo.completed } : todo)); //completed false true, true ise false yapacak.
     }
@@ -27,6 +27,13 @@ const TodoWrapper = () => {
     //dizi içerisinde dolaş, silinecek olanı ordan çıkart, geri kalanları yeni bir diziye koymak. yeni dizi=todos.filter((todo) => todo.id != id. ve setTodos vesilesiyle todos içerisine koyuyor.
     //deleteTask fonk. buradan direk todo ya yollayamayız ilk todocontainer e gönder ardından todo.js e gönder. burda 48.satırda gönderdik, todocontainerde 4. satırda karşıladık.
 
+    const editTodo = (id) => {
+        setTodos(
+            todos.map((todo) => {
+                todo.id == id ? { ...todo, isEditing: !todo.isEditing } : todo
+            })
+        );
+    }
 
 
     // //alternatif uzun yol.
