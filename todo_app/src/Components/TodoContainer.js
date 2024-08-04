@@ -20,7 +20,7 @@ const TodoContainer = ({ todos, toggleComplete, deleteTask }) => {
                                 toggleComplete={toggleComplete}
                                 deleteTask={deleteTask} //Todo js.de 5.satırda karşıladık.
                             />
-                        } //58.35
+                        }
 
                     })
                 }
