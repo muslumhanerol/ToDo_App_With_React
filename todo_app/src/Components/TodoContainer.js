@@ -2,7 +2,7 @@ import React from 'react'
 import Todo from './Todo'
 import TodoEditForm from './TodoEditForm'
 
-const TodoContainer = ({ todos, toggleComplete, deleteTask }) => {
+const TodoContainer = ({ todos, toggleComplete, deleteTask, editTodo }) => {
     //deleteTask i todo ya gönderdik. 15.satır
     return (
         <>
@@ -19,6 +19,7 @@ const TodoContainer = ({ todos, toggleComplete, deleteTask }) => {
                                 task={todo}
                                 toggleComplete={toggleComplete}
                                 deleteTask={deleteTask} //Todo js.de 5.satırda karşıladık.
+                                editTodo={editTodo}
                             />
                         }
 

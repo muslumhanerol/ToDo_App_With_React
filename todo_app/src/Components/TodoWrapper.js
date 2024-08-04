@@ -30,7 +30,7 @@ const TodoWrapper = () => {
     const editTodo = (id) => {
         setTodos(
             todos.map((todo) => {
-                todo.id == id ? { ...todo, isEditing: !todo.isEditing } : todo
+                return todo.id == id ? { ...todo, isEditing: !todo.isEditing } : todo
             })
         );
     }
@@ -54,7 +54,12 @@ const TodoWrapper = () => {
             <div className='TodoWrapper'>
                 <h1>Todo App</h1>
                 <TodoForm addTodo={addTodo} todos={todos} />
-                <TodoContainer todos={todos} toggleComplete={toggleComplete} deleteTask={deleteTask} />
+                <TodoContainer
+                    todos={todos}
+                    toggleComplete={toggleComplete}
+                    deleteTask={deleteTask}
+                    editTodo={editTodo} //todoContainer içinde karşıla. 5. satır
+                />
 
             </div>
         </>
