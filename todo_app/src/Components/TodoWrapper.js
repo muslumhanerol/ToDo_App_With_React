@@ -36,17 +36,7 @@ const TodoWrapper = () => {
     }
 
 
-    // //alternatif uzun yol.
-    // const deleteTaskAlternative = (id) => {
-    //     const newTodos = []
-    //     for (let i = 0; i < todos.length; i++) {
-    //         if (todos[i].id != id) {
-    //             newTodos.push(todos[i]); //silinmeyecek olanları koyduğumuz yer.
-    //         }
-    //     }
-    //     console.log("Silinmemiş Hali", todos);
-    //     console.log("Silinmiş Hali", newTodos);
-    // }
+
 
 
     return (
@@ -66,3 +56,16 @@ const TodoWrapper = () => {
 }
 
 export default TodoWrapper
+
+
+// //alternatif delete uzun yol.
+// const deleteTaskAlternative = (id) => {
+//     const newTodos = []
+//     for (let i = 0; i < todos.length; i++) {
+//         if (todos[i].id != id) {
+//             newTodos.push(todos[i]); //silinmeyecek olanları koyduğumuz yer.
+//         }
+//     }
+//     console.log("Silinmemiş Hali", todos);
+//     console.log("Silinmiş Hali", newTodos);
+// }
