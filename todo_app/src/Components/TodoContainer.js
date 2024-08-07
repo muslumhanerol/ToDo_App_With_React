@@ -12,7 +12,7 @@ const TodoContainer = ({ todos, toggleComplete, deleteTask, editTodo }) => {
 
                         //Normal if yazımı
                         if (todo.isEditing) { //eğer bu true ise todoeditform return olacak, değilse todoyu.
-                            return <TodoEditForm task={todo} />
+                            return <TodoEditForm key={todo.id} task={todo} />
                         } else {
                             return <Todo // Todo.js e gönderdiklerimiz.
                                 key={todo.id}

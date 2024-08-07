@@ -60,8 +60,6 @@ const TodoWrapper = () => {
                     deleteTask={deleteTask}
                     editTodo={editTodo} //todoContainer içinde karşıla. 5. satır
                 />
-
-
             </div>
         </>
     )
