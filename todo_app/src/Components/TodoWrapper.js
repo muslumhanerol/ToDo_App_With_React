@@ -35,7 +35,7 @@ const TodoWrapper = () => {
         );
     }
 
-    const saveTodo = (id, value) => { //TodoContainer e yollamalıyız.
+    const saveTodo = (id, value) => { //TodoContainer e yollamalıyız todowrap 61.satır.
         setTodos(
             todos.map((todo) =>
                 //todo id eşitse id üzerinde değişiklik yapılacak kayıt bulunmuştur.
@@ -58,6 +58,8 @@ const TodoWrapper = () => {
                     toggleComplete={toggleComplete}
                     deleteTask={deleteTask}
                     editTodo={editTodo} //todoContainer içinde karşıla. 5. satır
+                    saveTodo={saveTodo}
+
                 />
             </div>
         </>

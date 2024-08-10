@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const TodoEditForm = ({ task }) => {
+const TodoEditForm = ({ task, saveTodo }) => { //todocontainer den gönderildi saveTodo buradan karşılandı.
     const [value, setValue] = useState(task.desc);
 
     const handleSubmit = () => {
