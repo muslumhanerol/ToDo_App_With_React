@@ -39,7 +39,7 @@ const TodoWrapper = () => {
         setTodos(
             todos.map((todo) =>
                 //todo id eşitse id üzerinde değişiklik yapılacak kayıt bulunmuştur.
-                todo.id == id ? { ...todo, desc: value } : todo
+                todo.id == id ? { ...todo, desc: value, isEditing: !todo.isEditing } : todo //içeriği value ile değiştir ve isEditing i tersine çevirdik true false oluyor.
             )
         );
     };
