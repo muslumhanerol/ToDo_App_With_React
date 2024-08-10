@@ -5,7 +5,7 @@ const TodoEditForm = ({ task, saveTodo }) => { //todocontainer den gönderildi s
 
     const handleSubmit = () => {
         e.preventDefault(); //Form submit old. reflesh olmasının önüne geçer.
-
+        saveTodo(task.id, value);
     }
 
     return (
