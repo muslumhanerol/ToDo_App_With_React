@@ -35,7 +35,7 @@ const TodoWrapper = () => {
         );
     }
 
-    const saveTodo = (id, value) => {
+    const saveTodo = (id, value) => { //TodoContainer e yollamalıyız.
         setTodos(
             todos.map((todo) =>
                 //todo id eşitse id üzerinde değişiklik yapılacak kayıt bulunmuştur.
