@@ -49,10 +49,17 @@ h1 {
 
 .TodoBtn {
   width: 25%;
-  background-color: green;
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.TodoAddBtn {
+  background-color: green;
+}
+
+.TodoSaveBtn {
+  background-color: orange;
 }
 
 .Todo {
