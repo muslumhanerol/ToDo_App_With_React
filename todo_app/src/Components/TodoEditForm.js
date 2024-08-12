@@ -21,7 +21,7 @@ const TodoEditForm = ({ task, saveTodo }) => { //todocontainer den gönderildi s
                     placeholder='Update Task'
 
                 />
-                <button type='submit' className='TodoBtn'>Save</button>
+                <button type='submit' className='TodoBtn TodoSaveBtn'>Save</button>
             </form>
         </>
     )
