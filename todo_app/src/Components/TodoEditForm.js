@@ -10,7 +10,7 @@ const TodoEditForm = ({ task, saveTodo }) => { //todocontainer den gönderildi s
 
     return (
         <>
-            {/* <form onSubmit={handleSubmit} className='TodoForm'>
+            <form onSubmit={handleSubmit} className='TodoForm'>
                 <input
                     type='text'
                     value={value}
@@ -22,7 +22,7 @@ const TodoEditForm = ({ task, saveTodo }) => { //todocontainer den gönderildi s
 
                 />
                 <button type='submit' className='TodoBtn TodoSaveBtn'>Save</button>
-            </form> */}
+            </form>
         </>//2.09.45
     )
 }
