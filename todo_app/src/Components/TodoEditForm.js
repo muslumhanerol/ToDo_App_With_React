@@ -23,7 +23,7 @@ const TodoEditForm = ({ task, saveTodo }) => { //todocontainer den gönderildi s
                 />
                 <button type='submit' className='TodoBtn TodoSaveBtn'>Kaydet</button>
             </form>
-        </>//2.09.45
+        </>
     )
 }
 
